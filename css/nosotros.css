@@ -1,0 +1,25 @@
+body {
+  background: linear-gradient(rgba(25, 22, 2, 0.75), rgba(2, 7, 20, 0.75)),
+    url(caramelos.jpg);
+  font-family: "Rubik", sans-serif;
+  display: grid;
+  background-size: 100vw 100vh;
+  margin: 0;
+  font-size: 16px;
+  height: 100vh;
+  background-attachment: fixed;
+  align-items: center;
+  }
+
+  
+  .img__h1 {
+    font-size: 50px;
+  }
+  
+  
+  }
+  .img-nosotros{
+    width: 700px;
+    margin: auto;
+    display: block;
+}
