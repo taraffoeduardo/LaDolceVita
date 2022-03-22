@@ -40,6 +40,9 @@ body {
     width: 100%;
 
   }
+  .navbar__img{
+    width: 50px;
+  }
 
 .description__h2 {
   font-size: 30px;
