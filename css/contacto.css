@@ -16,15 +16,32 @@
     margin: 0;
     font-size: 30px;
     margin-bottom: 20px;
+    text-align: center;
   }
   
     #boton{
     background: #bab6a5;
     color: #fff;
     padding: 20px;
+    text-align: center;
   }
   
   #boton:hover {
     cursor: pointer;
   }
-  
+  input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+}
+textarea{
+min-height: 100px;
+max-height: 200px;
+max-width: 100%;
+}
+  @media screen and (max-width: 480px){
+    form{
+      width: 100%;
+    }
+  }
