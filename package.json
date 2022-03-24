@@ -1,0 +1,26 @@
+{
+  "name": "ladolcevita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss css/main.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taraffoeduardo/ladolcevita.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taraffoeduardo/ladolcevita/issues"
+  },
+  "homepage": "https://github.com/taraffoeduardo/ladolcevita#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
