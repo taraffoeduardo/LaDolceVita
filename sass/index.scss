@@ -68,7 +68,7 @@ header{
   justify-content: space-between;
   margin: 1rem 1.5rem;
   img{
-    width: 300px;
+    width: 200px;
   }
    .navbar__list{
   display: grid;
@@ -136,27 +136,6 @@ $redes: (
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .carousel-control-prev-icon{
   background-color: black;
 }
@@ -165,17 +144,7 @@ $redes: (
 }
 
 
-
-
-
-
-
-
-
 @media screen and (min-width: 380px) and (max-width: 1024px){
-
-
-
 .navbar__container{
   justify-content: left;
   display: flex;

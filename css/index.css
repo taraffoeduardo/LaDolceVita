@@ -53,7 +53,7 @@
     width: 100%; } }
 
 .container__tittle {
-  font-size: 4rem;
+  font-size: 2rem;
   color: white;
   text-align: center; }
 
@@ -78,7 +78,8 @@
     .row .list .list-img {
       display: block;
       width: auto;
-      text-align: center; }
+      text-align: left;
+      margin-left: -7px; }
   .row .list-img__visa {
     text-align: center; }
   .row .list__img-visa {
@@ -106,6 +107,18 @@
   margin: 10px;
   border-radius: 12rem; }
 
+@media screen and (max-width: 230px) {
+  .container__tittle {
+    font-size: 2rem; }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-content: center; }
+  .col-md-4 {
+    width: 60%; }
+  .img__logo {
+    width: 50px; } }
+
 @media screen and (max-width: 650px) {
   .row {
     display: flex;
@@ -115,13 +128,18 @@
     width: 60%; } }
 
 @media screen and (max-width: 767px) {
+  .list-img {
+    display: block;
+    width: auto;
+    text-align: left;
+    margin-left: -6px; }
   .row {
     display: flex;
     flex-direction: column;
     align-content: center; }
   .col-md-4 {
-    width: 60%;
-    margin: 20px; } }
+    width: 56%;
+    margin: 12px; } }
 
 .description__h2 {
   font-size: 30px;
@@ -134,6 +152,11 @@
   text-justify: center;
   text-align: center;
   padding: 20px; }
+
+.imagenes {
+  display: flex; }
+  .imagenes .img-nosotros {
+    width: auto; }
 
 *,
 *::after,
@@ -187,7 +210,7 @@ header {
     justify-content: space-between;
     margin: 1rem 1.5rem; }
     header .navbar__container img {
-      width: 300px; }
+      width: 200px; }
     header .navbar__container .navbar__list {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
