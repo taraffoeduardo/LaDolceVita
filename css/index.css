@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 .container__product {
   display: flex;
   padding: 16px;
@@ -217,18 +218,18 @@ header {
       align-items: center;
       grid-gap: 0.5rem;
       margin: auto 0; }
-    header .navbar__container a {
-      display: flex;
-      align-items: center; }
-    header .navbar__container .navbar__li {
-      list-style-type: none;
-      margin: 0 auto; }
-    header .navbar__container .navbar__link {
-      text-decoration: none;
-      color: white;
-      font-size: 1.2rem; }
-    header .navbar__container .navbar__link:hover {
-      font-size: 1.3rem; }
+  header a {
+    display: flex;
+    align-items: center; }
+  header .navbar__li {
+    list-style-type: none;
+    margin: 0 auto; }
+  header .navbar__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem; }
+  header .navbar__link:hover {
+    font-size: 1.3rem; }
 
 .networks__container {
   display: flex;
