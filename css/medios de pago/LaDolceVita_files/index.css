@@ -223,8 +223,7 @@ header {
       grid-gap: 0.5rem;
       margin: auto 0; }
     header .navbar__container .bi-list {
-      font-size: 60px;
-      color: white; }
+      align-items: center; }
   header a {
     display: flex;
     align-items: center; }

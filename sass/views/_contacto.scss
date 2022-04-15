@@ -37,6 +37,15 @@ max-height: 200px;
 max-width: 100%;
 }
 }
+@media screen and (max-width: 230px){
+  form{
+    width: 100%;
+  }
+  
+}
+
+
+
   @media screen and (max-width: 480px){
     form{
       width: 100%;
