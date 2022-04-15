@@ -10,7 +10,7 @@
   box-sizing: border-box;}
 body {
   background: linear-gradient(rgba(25, 22, 2, 0.75), rgba(2, 7, 20, 0.75)),
-    url(caramelos.jpg);
+    url('../assets/caramelos.jpg');
   font-family: "Rubik", sans-serif;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -102,7 +102,6 @@ a {
   font-size: 1.3rem;
 }
 }
-
 
 
 
