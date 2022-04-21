@@ -30,45 +30,53 @@
   <body>
     <header>
       <nav class="navbar__container">
-        <a href="../index.html"
-          ><img src="../assets/ladolcevita_desktop.png" alt="logo" /></a
-        >
+        <a class="img__logo" href="../index.html"
+          ><img src="../assets/ladolcevita_desktop.png" alt="logo" class="logo"
+        /></a>
+        <input type="checkbox" id="check">
         <ul class="navbar__list">
           <li class="navbar__li">
-            <a class="navbar__link" href="../index.html">Inicio</a>
+            <a class="navbar__link" href="./index.html">Inicio</a>
           </li>
           <li class="navbar__li">
-            <a class="navbar__link" href="productos.html">Productos</a>
-          </li>
-          <li class="navbar__li">
-            <a class="navbar__link" href="nosotros.html">Nosotros</a>
-          </li>
-          <li class="navbar__li">
-            <a class="navbar__link" href="contacto.html">Contacto</a>
-          </li>
-          <li class="navbar__li">
-            <a class="navbar__link" href="medios_de_pago.html"
-              >Medios de Pago</a
+            <a class="navbar__link" href="./mipagina/productos.html"
+              >Productos</a
             >
           </li>
+          <li class="navbar__li">
+            <a class="navbar__link" href="./mipagina/nosotros.html">
+              Nosotros
+            </a>
+          </li>
+          <li class="navbar__li">
+            <a class="navbar__link" href="./mipagina/contacto.html">
+              Contacto
+            </a>
+          </li>
+          <li class="navbar__li">
+            <a class="navbar__link" href="./mipagina/medios_de_pago.html">
+              Medios de Pago
+            </a>
+          </li>
         </ul>
-        <span>
+        
+        <label for="check" class="checkbtn">
           <i class="bi bi-list"></i>
-        </span>
+        </label>
       </nav>
     </header>
 
     <section class="formulary">
       <form>
         <h2 class="formulary__h2">Contacto</h2>
-        <input type="text" name="Nombre" placeholder="Nombre" />
-        <input type="text" name="correo" placeholder="Correo" />
-        <input type="text" name="telefono" placeholder="Telefono" />
+        <input type="text" name="Nombre" placeholder="Nombre" required/>
+        <input type="text" name="correo" placeholder="Correo" required/>
+        <input type="number" name="telefono" placeholder="Telefono" required/>
         <textarea
           name="mensaje"
           placeholder="Escriba aqui su mensaje"
         ></textarea>
-        <input type="buttom" value="Enviar" id="boton" />
+        <button id="boton">Enviar</button>
       </form>
     </section>
 
