@@ -202,27 +202,30 @@ body {
   text-align: center;
   padding: 20px; }
 
-.img__logo {
-  text-align: center; }
-
 header {
   background: rgba(186, 183, 113, 0.3); }
   header .navbar__container {
     display: flex;
     justify-content: space-between;
-    margin: 1rem 1.5rem; }
-    header .navbar__container img {
-      width: 200px; }
+    height: 80%;
+    width: 100%; }
+    header .navbar__container .logo {
+      position: absolute;
+      padding: 20px 50px;
+      width: 300px; }
+    header .navbar__container .img__logo {
+      height: 40px; }
     header .navbar__container .navbar__list {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       align-items: center;
       grid-gap: 0.5rem;
-      margin: auto 0;
-      top: 65px; }
+      margin: auto 0; }
       header .navbar__container .navbar__list .navbar__li {
         list-style-type: none;
-        margin: 0 auto; }
+        display: inline-block;
+        margin: 0 5px;
+        line-height: 80px; }
         header .navbar__container .navbar__list .navbar__li .navbar__link {
           text-decoration: none;
           color: white;
@@ -231,9 +234,15 @@ header {
           text-transform: uppercase; }
         header .navbar__container .navbar__list .navbar__li .navbar__link:hover {
           font-size: 1.3rem; }
-    header .navbar__container .bi-list {
-      font-size: 40px;
-      color: white; }
+  header .checkbtn {
+    font-size: 30px;
+    color: #fff;
+    line-height: 80px;
+    display: none;
+    margin-right: 40px;
+    cursor: pointer; }
+  header #check {
+    display: none; }
 
 .networks__container {
   display: flex;
@@ -270,102 +279,45 @@ header {
 .carousel-control-next-icon {
   background-color: black; }
 
-.boton_burger {
-  margin-right: 30px;
-  display: none;
-  cursor: pointer; }
+@media screen and (max-width: 1130px) {
+  header .navbar__container .navbar__list .navbar__li .navbar__link {
+    font-size: 1rem; }
+  header .navbar__container .navbar__list .navbar__li .navbar__link:hover {
+    font-size: 1.2rem; } }
 
-ul.show {
-  top: 65px; }
+@media screen and (max-width: 952px) {
+  header .navbar__container .logo {
+    width: 250px; }
+  header .navbar__container .navbar__list .navbar__li .navbar__link {
+    font-size: 0.8rem; }
+  header .navbar__container .navbar__list .navbar__li .navbar__link:hover {
+    font-size: 1rem; } }
 
-@media screen and (max-width: 858px) {
-  main {
-    height: 54%;
-    margin-bottom: auto; }
-  .carrusel {
-    margin-bottom: 150px;
-    width: auto 0; }
-  .navbar__list {
-    width: 100vw; }
-  .boton_burger {
-    display: inline-flex; }
-  .img__logo {
-    width: auto; }
-  header .navbar__container img {
-    width: 100px;
-    margin-top: 21px; }
+@media screen and (max-width: 880px) {
+  header .navbar__container .logo {
+    width: 300px; }
   header .navbar__container .navbar__list {
+    display: block;
     position: fixed;
-    width: 100vw;
-    height: calc(100%-65px);
-    top: -100vh;
-    text-align: center;
-    transition: all .4s;
-    flex-direction: column; }
-    header .navbar__container .navbar__list .navbar__li {
-      margin: 30px 0 0 0;
-      line-height: 30px; }
-      header .navbar__container .navbar__list .navbar__li .navbar__link {
-        font-size: 0.9rem;
-        font-weight: bold; }
-      header .navbar__container .navbar__list .navbar__li .navbar__link:hover {
-        font-size: 1rem; } }
-
-@media screen and (max-width: 858px) and (orientation: landscape) {
-  header .navbar__container .navbar__list {
-    overflow: scroll;
-    height: calc(100%-65px); }
-    header .navbar__container .navbar__list .navbar__li {
-      margin: 5px 0 0 0; }
-      header .navbar__container .navbar__list .navbar__li .navbar__link {
-        font-size: 0.9rem;
-        font-weight: bold; } }
-
-@media screen and (max-width: 488px) {
-  main {
-    height: 54%;
-    margin-bottom: auto; }
-  .carrusel {
-    margin-bottom: 150px;
-    width: auto 0; }
-  .networks__container {
-    position: absolute;
-    height: 50px;
-    text-align: center;
     width: 100%;
-    margin-top: 240px; }
-  .navbar__list {
-    width: 100vw; }
-  .boton_burger {
-    display: inline-flex; }
-  .img__logo {
-    width: auto; }
-  header .navbar__container img {
-    width: 100px;
-    margin-top: 21px; }
-  header .navbar__container .navbar__list {
-    position: fixed;
-    width: 100vw;
-    height: calc(100%-65px);
-    top: -100vh;
+    height: -100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
     text-align: center;
-    transition: all .4s;
-    flex-direction: column; }
+    transition: all .5s; }
     header .navbar__container .navbar__list .navbar__li {
-      margin: 30px 0 0 0;
+      display: block;
+      margin: 50px 0px;
       line-height: 30px; }
       header .navbar__container .navbar__list .navbar__li .navbar__link {
-        font-size: 0.9rem;
-        font-weight: bold; }
-      header .navbar__container .navbar__list .navbar__li .navbar__link:hover {
-        font-size: 1rem; } }
-
-@media screen and (max-width: 858px) and (orientation: landscape) {
-  header .navbar__container .navbar__list {
-    overflow: scroll;
-    height: calc(100%-65px); }
-    header .navbar__container .navbar__list .navbar__li {
-      margin: 5px 0 0 0; }
-      header .navbar__container .navbar__list .navbar__li .navbar__link {
-        font-size: 0.9rem;
-        font-weight: bold; } }
+        font-size: 0.8rem; }
+      header .navbar__container .navbar__list .navbar__li .navbar__link:hover, header .navbar__container .navbar__list .navbar__li .navbar__link.active {
+        background: none;
+        color: red; }
+  header .checkbtn {
+    display: block; }
+  #check:checked ~ .navbar__list {
+    left: 0%;
+    height: 0 auto;
+    z-index: 100; } }
