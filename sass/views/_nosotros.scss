@@ -1,17 +1,47 @@
 .description__h2 {
-    font-size: 30px;
+    font-size: 1.8rem;
+    font-weight: 600;
     color: white;
-    text-align: center;}
+    text-align: center;
+    margin-top: 20px; 
+    
+  }
   .description__p {
-    font-size: 20px;
+    font-size: 1rem;
     color: white;
     text-justify: center;
     text-align: center;
     padding: 20px;
+    
+  }
+  .description{
+    
+    width: 100%;
   }
   .imagenes{
     display: flex;
-    .img-nosotros{
-      width: auto;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+    justify-content: center;
+    img{
+      width: 50%;
+      display: flex;
+    }
+   }
+   
+@media screen and (max-width: 680px) {
+  .description{
+  .description__p{
+    font-size: 1rem;
+  }}
+  .imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    img{
+      width: 100%;
     }
   }
+  
+}
