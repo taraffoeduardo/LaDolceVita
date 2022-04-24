@@ -9,6 +9,7 @@
     padding: 20px 30px;
     background: rgba(0, 0, 0, 0.4);
     max-width: calc(100vw -40px);
+    margin: 0 auto;
   }
   .formulary__h2{
     color: #fff;
@@ -47,10 +48,11 @@ max-width: 100%;
 
 }
 
-@media screen and (max-width: 230px){
+@media screen and (max-width: 480px){
+  .formulary{
   form{
     width: 100%;
 
-  }
+  }}
   
 }
